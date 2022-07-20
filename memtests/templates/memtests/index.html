@@ -1,0 +1,22 @@
+{% extends 'memtests/base.html' %}
+
+{% block content %}
+
+<h1>Memory Tests HOME</h1>
+
+<!--- displays each test --->
+<div class="card-deck">
+{% for test in tests %}
+	<div class="card mt-4" style="width: 18rem;">
+	  <div class="card-body">
+	    <h5 class="card-title">{{ test.title }}</h5>
+	    <h6 class="card-subtitle mb-2 text-muted">{{ test.type }}</h6>
+	    <img src="https://neurosciencenews.com/files/2022/02/alzheimers-memory-test-neurosicencces-public-1.jpg" class="card-img-top" alt="...">
+	    <p class="card-text">{{ test.description }}</p>
+	    <a href="#" class="btn btn-primary">Test</a>
+	  </div>
+	</div>
+{% endfor %}
+</div>
+
+{% endblock %}

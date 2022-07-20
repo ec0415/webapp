@@ -1,0 +1,25 @@
+{% extends 'memtests/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="row justify-content-center">
+	<div class="col-6">
+		<form method="POST">
+			{% csrf_token %}
+			<fieldset class="form-group">
+				<legend class="border-bottom mb-4 text-center">Sign Up!</legend>
+				{{ form|crispy }}
+			</fieldset>
+			<div class="form-group">
+				<button type="submit" class="btn btn-info">Sign Up</button>
+			</div>
+		</form>
+		<div class="border-top pt-3">
+			<small class="text-muted">
+				Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
+			</small>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
