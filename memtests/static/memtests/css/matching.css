@@ -1,0 +1,62 @@
+/* '-nb' = non bootstrap -- given to elements that have the same name in bootstrap but I want to override */
+
+.row-nb {
+	text-align: center;
+}
+
+.card-nb {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.card-nb.done {
+	cursor: default;
+}
+
+.card-nb.done:hover {
+	cursor: default;
+	box-shadow: none;
+}
+.card-nb:hover {
+	box-shadow: inset 0px 0px 0px 2px black;
+	box-sizing: border-box;
+}
+
+.red {
+	background-color: red;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.green {
+	background-color: green;
+}
+
+.cyan {
+	background-color: cyan;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.pink {
+	background-color: pink;
+}
+
+.color-hidden {
+	background-color: #eee;
+}

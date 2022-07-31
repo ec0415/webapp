@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
 	path('', views.index, name='memtests-index'),
-	path('test/', views.test, name='memtests-test'), #fixme
+	path('matching/', views.matchingTest, name='memtests-matching'), #fixme
 ]

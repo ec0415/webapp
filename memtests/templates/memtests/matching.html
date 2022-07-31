@@ -1,0 +1,87 @@
+{% extends 'memtests/base.html' %}
+{% load static %}
+{% block content %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'memtests/css/matching.css' %}">
+{% endblock %}
+
+<div class="row-nb">
+	<h3>Score: <span id="score"></span></h3>
+</div>
+<div class="row-nb">
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+</div>
+<div class="row-nb">
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+</div>
+<div class="row-nb">
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+</div>
+<div class="row-nb">
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+	<div 
+		class="card-nb color-hidden" 
+		onclick="onCardClicked(event)">
+	</div>
+</div>
+
+<script src="{% static 'memtests/js/matching.js' %}"></script>
+
+{% endblock %}

@@ -28,7 +28,7 @@ def index(request):
 	}
 	return render(request, 'memtests/index.html', context)
 
-
-def test(request):
-	return render(request, 'memtests/test.html', {'title': 'Memory Test'})
+#fixme
+def matchingTest(request):
+	return render(request, 'memtests/matching.html', {'title': 'Matching'})
 
