@@ -30,5 +30,5 @@ def index(request):
 
 #fixme
 def matchingTest(request):
-	return render(request, 'memtests/matching.html', {'title': 'Matching'})
+	return render(request, 'html_files/matching.html', {'title': 'Matching'})
 
